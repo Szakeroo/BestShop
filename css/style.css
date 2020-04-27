@@ -116,7 +116,7 @@
 
 
 }
-
+/*///////////////////////////////////BTN/////////////////////////*/
 .btn{
     text-decoration: none;
     color: #FFFFFF;
@@ -138,7 +138,7 @@
 .btn--large{
     padding: 22px 155px;
 }
-
+/*/////////////////////////////////STATISTIC///////////////////*/
 .statistic{
     margin-top: 100px;
 
@@ -216,7 +216,7 @@
 
 
 }
-
+/*////////////////////////////////////////////BENEFITS////////////////////////////*/
 .benefits{
     background: var(--color-light-grey);
     padding: 100px 0;
@@ -260,7 +260,20 @@
     flex-direction: row-reverse;
     --accent-color: var(--color-primary);
     position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.benefits__box-phone .benefits__img::before{
+    content: "";
+    height: 300px;
+    width: 300px;
+    display: block;
+    border-radius: 50%;
+    background: var(--accent-color);
+    position: absolute;
+    top: -13px;
+    left: -25px;
 
 }
 
@@ -328,19 +341,6 @@
     right: -6px;
 }
 
-.benefits__box-phone .benefits__img::before{
-    content: "";
-    height: 300px;
-    width: 300px;
-    display: block;
-    border-radius: 50%;
-    color: var(--accent-color);
-    position: absolute;
-    top: 0;
-    left: -20px;
-
-}
-
 
 .benefits__box-notebook .benefits__img img{
     width: 386px;
@@ -354,5 +354,286 @@
 }
 
 .benefits__double .benefits__box-img img {
-    
+    height: 100%;
+
+
+}
+/*////////////////////////////////PRICING///////////////////////////////////////////////*/
+.price{
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.price__main-header{
+    margin: 100px 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+}
+
+.price__boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.price__box{
+    border: 1px solid var(--accent-color);
+    border-radius: 18px;
+    margin-right: 50px;
+
+}
+.price__box-basic{
+    --accent-color: var(--color-redish);
+    width: 372px;
+    height: 461px;
+
+}
+
+.price__box-premium{
+    --accent-color: var(--color-green);
+    width: 372px;
+    height: 461px;
+
+}
+
+.price__box-professional{
+    --accent-color: var(--color-primary);
+    width: 405px;
+    height: 500px;
+    box-shadow: 1px 1px 1px var(--color-primary);
+
+}
+
+.price__box-desctription{
+    text-align: center;
+
+
+}
+.price__desctription-cost{
+    color: var(--accent-color);
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    padding: 20px;
+
+}
+
+.no-limited{
+    margin-bottom: 20px;
+}
+.price__desctription-header{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.price__desctription-limited{
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.price__items{
+    text-align: center;
+
+}
+.price__item{
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+.price__item-not{
+
+}
+
+.price__item::before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: url(../assets/Ckechmark-1.svg);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.price__item-not::before{
+    background: url(../assets/Close.svg);
+}
+
+.price__box .btn{
+    position: relative;
+    background-color: var(--accent-color);
+
+}
+.price__box .btn-basic{
+    bottom: -46px;
+    left: 91px;
+}
+
+.price__box .btn-professional{
+    bottom: -73px;
+    left: 116px;
+}
+
+.price__box .btn-premium{
+    top: 35px;
+    right: -105px;
+
+}
+
+/*//////////////////////////////////////////CONTACT/////////////////////*/
+
+.contact{
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact__box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.contact__head{
+    font-size: 49px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+
+}
+.contact__info{
+
+}
+.contact__data{
+    display: flex;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #A5A5A5;
+    padding: 20px;
+    justify-content:center ;
+
+}
+
+
+.contact__data a{
+    text-decoration: none;
+    color: #A5A5A5;
+}
+.contact__data-mail{
+
+
+
+}
+
+.contact__data-phone{
+
+}
+
+
+.contact__data-mail::before{
+    content:"";
+    height: 27px;
+    width: 27px;
+    background: url(../assets/mailicon.svg);
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+
+.contact__data-phone::before{
+    content: "";
+    height: 27px;
+    width: 27px;
+    background: url(../assets/Phoneicon.svg);
+    display: inline-block;
+
+}
+.form__box{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 30px 0;
+
+}
+
+.form__box input{
+    border: none;
+    border-bottom: 1px solid #95989A;
+}
+
+.form__bigbox{
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.bigbox__text{
+    font-size: 10px;
+
+}
+
+.bigbox__checkbox{
+    color: #707070;
+
+}
+
+.submit{
+    margin-top: 30px;
+    margin-left: 150px;
+
+}
+.footer{
+    padding: 20px 0;
+    margin-top: 100px;
+    box-shadow: 0 -5px 20px lightslategray;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer__text{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.footer__copyright{
+    margin-top: 10px;
+    font-size: 10px;
+    color: #A5A5A5;
+
+}
+
+.facebook{
+    margin-left: 50px;
 }
